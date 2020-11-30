@@ -17,8 +17,11 @@ public class Unleserlich {
         }
     }
 
+    // int a is the value from the array[i]
     public static int doSomethingClever(int a) {
         int b;
+        // a <= is never happening with the given test numbers, so you dont need this
+        // condition
         if (a <= 1) {
             if (a == 1) {
                 b = calcSomethingNice(a);
