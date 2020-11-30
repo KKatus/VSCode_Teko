@@ -14,44 +14,32 @@ public class Unleserlich {
     public static void main(String args[]) {
         int[] testValues = { 5, 10, 15, 20, 30, 40 };
         for (int i = 0; i < testValues.length; ++i) {
-            System.out.println(doSomethingClever(testValues[i]));
+            System.out.println(funktion1(testValues[i]));
         }
     }
 
     // int a is the value from the array[i]
-    public static int doSomethingClever(int a) {
-        int b;
-        // a <= is never happening with the given test numbers, so you dont need this
-        // condition
-        if (a <= 1) {
-            if (a == 1) {
-                b = calcSomethingNice(a);
+    public static int funktion1(int Wert_Array) {
+        int b = 1;
+        if (Wert_Array <= 1) {
+            if (Wert_Array == 1) {
+                return b;
             } else {
-                b = getSomeSmartInt(a - 1);
+                b = addPlusOne(Wert_Array - 1);
             }
         } else {
-            return theSmartestMethodsAlwaysNeedRidiculouslyLongNames(a); // function allways jumps right in here
+            return function2(Wert_Array); // function allways jumps right in
+                                          // here
         }
-        return b; // b is not used at all and can be deleted
+        return b;
     }
 
-    // this method is not used at all and can be deleted
-    public static int getSomeSmartInt(int c) {
-        return ++c;
+    public static int addPlusOne(int Wert_Array) {
+        return ++Wert_Array;
     }
 
-    // this method is not used at all and can be deleted
-    public static int calcSomethingNice(int d) {
-        int i = 1;
-        for (i = d * 11; i > d; i--) {
-            i--;
-        }
-        return i;
-    }
-
-    // Die eigentliche Rechnung
-    public static int theSmartestMethodsAlwaysNeedRidiculouslyLongNames(int e) {
-        int container = doSomethingClever(e - 1);
-        return container + doSomethingClever(e - 2);
+    public static int function2(int Wert_Array) {
+        int container = funktion1(Wert_Array - 1); // wird bis auf 1 gerechnet
+        return container + funktion1(Wert_Array - 2);
     }
 }
