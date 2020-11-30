@@ -38,6 +38,7 @@ public class Schaltjahr {
         }
     }
 
+    // Jahr wird in funktion übergeben
     private static boolean isLeapYear(int Jahr) {
         // ist schaltjahr wenn durch 4 aber nicht durch 100
         if (Jahr % 4 == 0 && Jahr % 100 != 0) {
