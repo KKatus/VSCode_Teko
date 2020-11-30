@@ -7,6 +7,7 @@
 //                Implementieren sie Kommentare. Die detallierte Aufgabe befindet sich im Teams unter 03-Methoden Praktikum.
 // Erstellt     : 30.11.2020
 // Version      : 1.0
+// Notizen      : Der erste Output an der Konsole war  5, 55, 610, 6765, 832040, 102334155        
 //===============================================================================
 
 public class Unleserlich {
@@ -29,15 +30,17 @@ public class Unleserlich {
                 b = getSomeSmartInt(a - 1);
             }
         } else {
-            return theSmartestMethodsAlwaysNeedRidiculouslyLongNames(a);
+            return theSmartestMethodsAlwaysNeedRidiculouslyLongNames(a); // function allways jumps right in here
         }
-        return b;
+        return b; // b is not used at all and can be deleted
     }
 
+    // this method is not used at all and can be deleted
     public static int getSomeSmartInt(int c) {
         return ++c;
     }
 
+    // this method is not used at all and can be deleted
     public static int calcSomethingNice(int d) {
         int i = 1;
         for (i = d * 11; i > d; i--) {
@@ -46,6 +49,7 @@ public class Unleserlich {
         return i;
     }
 
+    // Die eigentliche Rechnung
     public static int theSmartestMethodsAlwaysNeedRidiculouslyLongNames(int e) {
         int container = doSomethingClever(e - 1);
         return container + doSomethingClever(e - 2);
