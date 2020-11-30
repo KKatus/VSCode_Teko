@@ -1,4 +1,13 @@
 import java.util.Scanner;
+//===============================================================================
+// Projekt      : TEKO WISE Semester 3
+// Titel        : Fibonacci-Folge
+// Dateiname    : Fibonacci_Folge.java
+// Autor        : Sascha Brägger
+// Beschreibung : Ausgabe einer bestimmte länge der Fibbonaci Folge
+// Erstellt     : 30.11.2020
+// Version      : 1.0
+//===============================================================================
 
 /**
  * Fibonacci-Folge
