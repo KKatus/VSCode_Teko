@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 //===============================================================================
 // Projekt      : TEKO WISE Semester 3
 // Titel        : Schaltjahr
